@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <!-- Search, should always appear as action button -->
+    <item android:id="@+id/action_search"
+          android:icon="@drawable/ic_menu_search"
+          android:title="@string/action_search_text"
+          android:showAsAction="collapseActionView|ifRoom"
+          android:actionViewClass="android.widget.SearchView" />
+    <!-- Bag, should always appear as action button -->
+    <item android:id="@+id/action_bag"
+          android:title="@string/action_bag_text"
+          android:actionLayout="@layout/bag_update_count"
+          android:showAsAction="always" />
+    <!-- Whishlist, should always appear as action button -->
+    <item android:id="@+id/action_whishlist"
+          android:title="@string/action_whishlist_text"
+          android:actionLayout="@layout/wishlist_update_count"
+          android:showAsAction="always" />
+</menu>
+<!-- android:actionLayout="@layout/bag_update_count" 
+
+          android:actionLayout="@layout/wishlist_update_count"-->

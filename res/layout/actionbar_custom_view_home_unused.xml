@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Black" >
+    
+    <TextView 
+        android:id="@+id/titleApps"
+        android:text="Shopper"
+        android:textColor="@color/White"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"/>
+
+	<ImageView
+		android:id="@+id/actionBarLogo"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_centerHorizontal="true"
+		android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+		android:clickable="false"
+		android:focusable="false"
+		android:longClickable="false"
+		android:paddingRight="10dp"
+		android:src="@drawable/shopping_bag" />
+
+
+</RelativeLayout>

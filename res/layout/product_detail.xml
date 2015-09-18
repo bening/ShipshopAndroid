@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/productImage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/headerContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/headerFirstRow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#37ffffff"
+            android:padding="5dp" >
+
+            <ImageView
+                android:id="@+id/shareButton"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:src="@drawable/button_share_selector" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/productName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dip"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/prductPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ed008c" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/detailButton"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:src="@drawable/button_detail_selector" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/spacing_product_vertical"
+            android:gravity="right" >
+
+            <ImageView
+                android:id="@+id/wishListButton"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:clickable="true"
+                android:src="@drawable/button_wishlist" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/buttonArea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="3dp" >
+
+        <ImageView
+            android:id="@+id/sizeButton"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:src="@drawable/button_pilih_selector" />
+
+        <ImageView
+            android:id="@+id/addButton"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:src="@drawable/button_tambah_selector" />
+    </LinearLayout>
+
+    <com.dios.shopper.customcomponent.ViewPagerDisable
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+	    android:layout_above="@id/buttonArea"
+	    android:layout_below="@id/headerContainer" />
+
+</RelativeLayout>

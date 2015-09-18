@@ -1,0 +1,66 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    
+    <style name="productFontStyle">
+		<item name="android:textStyle">normal</item> 
+		<item name="android:textColor">@color/Black</item> 
+		<item name="android:textSize">@dimen/product_font_size</item> 
+		<!-- <item name="android:shadowColor">#FF000000</item> 
+		<item name="android:shadowDx">1</item> 
+		<item name="android:shadowDy">-1</item> 
+		<item name="android:shadowRadius">1</item> --> 
+	</style>
+	
+    <style name="productOnBagFontStyle">
+		<item name="android:textStyle">normal</item> 
+		<item name="android:textColor">@color/Black</item> 
+		<item name="android:textSize">@dimen/product_on_bag_font_size</item> 
+	</style>
+	
+    <style name="drawerLayoutStyle">
+        <item name="android:background">@color/WhiteSmoke</item>
+        <item name="android:divider">#00000000</item>
+        <item name="android:dividerHeight">0dp</item>
+        <item name="android:listSelector">@drawable/drawer_layout_selector</item>
+    </style>
+    
+    <style name="TwoWayView">
+	    <item name="android:orientation">horizontal</item>
+	</style>
+	
+    <style name="edittextStyle1">
+		<item name="android:textStyle">normal</item> 
+		<item name="android:textColor">@color/Black</item> 
+		<item name="android:textSize">@dimen/product_font_size</item> 
+		<item name="android:background">@drawable/input</item> 
+		<item name="android:paddingLeft">15dp</item> 
+		<!-- <item name="android:paddingTop">5dp</item>
+		<item name="android:paddingRight">5dp</item>
+		<item name="android:paddingBottom">5dp</item> -->
+	</style>
+	
+    <style name="loginButtonStyle">
+		<item name="android:textStyle">normal</item> 
+		<item name="android:textColor">@color/WhiteSmoke</item> 
+		<item name="android:textSize">@dimen/product_font_size</item> 
+		<item name="android:background">@drawable/btn_login</item> 
+		<item name="android:padding">5dp</item> 
+	</style>
+
+</resources>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/FrameLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/LoginBgColor" >
+
+    <LinearLayout
+        android:id="@+id/wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center_horizontal"
+        android:orientation="vertical"
+        android:padding="@dimen/login_page_padding" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/login_logo_margin_bottom"
+            android:src="@drawable/logo_login" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/login_welcoming_msg_margin_bottom"
+            android:text="@string/login_welcoming_msg"
+            android:textColor="#959595"
+            android:textSize="@dimen/login_welcoming_msg_size" />
+
+        <EditText
+            android:id="@+id/username"
+            style="@style/edittextStyle1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/login_field_margin_bottom"
+            android:drawableRight="@drawable/icon_username"
+            android:hint="@string/username_hint"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/password"
+            style="@style/edittextStyle1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/login_field_margin_bottom"
+            android:drawableRight="@drawable/icon_password"
+            android:hint="@string/password_hint"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/loginBtn"
+            style="@style/loginButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/login_button_margin_top"
+            android:clickable="true" />
+    </LinearLayout>
+
+</FrameLayout>

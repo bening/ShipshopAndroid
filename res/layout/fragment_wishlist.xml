@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/contentWrapper"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <GridView
+        android:id="@+id/gridview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/White"
+        android:gravity="center"
+        android:horizontalSpacing="@dimen/spacing_product_vertical"
+        android:numColumns="2"
+        android:padding="@dimen/spacer_product_top"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="@dimen/spacing_product_vertical" />
+
+    <LinearLayout
+        android:id="@+id/noProductLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/White"
+        android:orientation="vertical"
+        android:padding="@dimen/spacer_product_top" >
+
+        <RelativeLayout
+            android:id="@+id/emptyBag"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+
+            <LinearLayout
+                android:id="@+id/emptyBagLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_centerInParent="true" >
+
+                <ImageView
+                    android:id="@+id/bagIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/wishlist" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/empty_wishlist_message"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/checkout_btn_bg_selector"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="continueShopping"
+            android:padding="5dp"
+            android:text="@string/continue_shopping_message"
+            android:textColor="@color/White"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</FrameLayout>

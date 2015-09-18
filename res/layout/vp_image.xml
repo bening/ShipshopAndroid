@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:gesture-image="http://schemas.polites.com/android"
+    android:id="@+id/itemWrapper"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <FrameLayout
+        android:id="@+id/productLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" >
+
+        <!-- <ImageView
+            android:id="@+id/productImg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" /> -->
+        
+        <com.polites.android.GestureImageView
+	        android:id="@+id/productImg"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        gesture-image:min-scale="0.1"
+	        gesture-image:max-scale="10.0"
+	        gesture-image:strict="false"/>
+        
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/colorContainer"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:background="#37ffffff"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Warna"
+            android:textSize="15dip"
+            android:textStyle="bold" />
+
+        <ListView
+            android:id="@+id/colorList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+        </ListView>
+    </LinearLayout>
+</RelativeLayout>

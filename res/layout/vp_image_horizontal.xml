@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:gesture-image="http://schemas.polites.com/android"
+    android:id="@+id/itemWrapper"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+    
+    <com.dios.shopper.customcomponent.VerticalPager
+		    android:id="@+id/pager"
+		    android:layout_height="match_parent"
+		    android:layout_width="match_parent"
+		    android:orientation="vertical" >
+		    
+        <com.polites.android.GestureImageView
+			xmlns:gesture-image="http://schemas.polites.com/android"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    gesture-image:min-scale="0.1"
+		    gesture-image:max-scale="10.0"
+		    gesture-image:strict="false"
+			android:scaleType = "centerInside"
+			android:src="@drawable/image_1"/>
+        
+        <com.polites.android.GestureImageView
+			xmlns:gesture-image="http://schemas.polites.com/android"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    gesture-image:min-scale="0.1"
+		    gesture-image:max-scale="10.0"
+		    gesture-image:strict="false"
+			android:scaleType = "centerInside"
+			android:src="@drawable/image_2"/>
+        
+        <com.polites.android.GestureImageView
+			xmlns:gesture-image="http://schemas.polites.com/android"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    gesture-image:min-scale="0.1"
+		    gesture-image:max-scale="10.0"
+		    gesture-image:strict="false"
+			android:scaleType = "centerInside"
+			android:src="@drawable/image_3"/>
+        
+        <com.polites.android.GestureImageView
+			xmlns:gesture-image="http://schemas.polites.com/android"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    gesture-image:min-scale="0.1"
+		    gesture-image:max-scale="10.0"
+		    gesture-image:strict="false"
+			android:scaleType = "centerInside"
+			android:src="@drawable/image_4"/>
+    
+    </com.dios.shopper.customcomponent.VerticalPager>
+    
+    
+    <LinearLayout
+        android:id="@+id/colorContainer"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:background="#37ffffff"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Warna"
+            android:textSize="15dip"
+            android:textStyle="bold" />
+
+        <ListView
+            android:id="@+id/colorList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+        </ListView>
+    </LinearLayout>
+</RelativeLayout>

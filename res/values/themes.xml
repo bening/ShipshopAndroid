@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- the theme applied to the application or activity -->
+    <style name="CustomActionBarTheme"
+           parent="@style/Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:actionBarStyle">@style/MyActionBarBlack</item>
+    	<item name="android:homeAsUpIndicator">@drawable/button_back34</item>
+        <item name="homeAsUpIndicator">@drawable/button_back34</item>
+        <!-- <item name="android:actionBarTabTextStyle">@style/MyActionBarTabText</item> -->
+        <item name="android:actionMenuTextColor">@color/Red</item>
+        
+        <!-- <item name="android:actionBarWidgetTheme">@style/ActionBarWidgetCustom</item> -->
+        <!-- Changing the small search icon when the view is expanded -->
+	    <!-- <item name="searchViewSearchIcon">@drawable/ic_menu_search</item>  -->
+	    <!-- Changing the cross icon to erase typed text -->
+	    <!-- <item name="searchViewCloseIcon">@drawable/ic_action_remove</item> -->
+	    <!-- Styling the background of the text field, i.e. blue bracket -->
+	    <!-- <item name="searchViewTextField">@drawable/search_custom</item> -->
+	    <!-- Styling the text view that displays the typed text query -->
+
+        <!-- Support library compatibility -->
+        <item name="actionBarStyle">@style/MyActionBarBlack</item>
+        <!-- <item name="actionBarTabTextStyle">@style/MyActionBarTabText</item> -->
+        <item name="actionMenuTextColor">@color/RoyalBlue</item>
+    </style>
+
+    <!-- ActionBar styles -->
+    <style name="MyActionBarBlack"
+           parent="@style/Widget.AppCompat.ActionBar">
+        <item name="android:titleTextStyle">@style/MyActionBarTitleText</item>
+		<item name="android:background">@color/Black</item>
+        
+        <!-- Support library compatibility -->
+        <item name="titleTextStyle">@style/MyActionBarTitleText</item>
+        <item name="background">@color/Black</item>
+    </style>
+
+    <!-- ActionBar title text -->
+    <style name="MyActionBarTitleText"
+           parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/White</item>
+        <item name="android:homeAsUpIndicator">@drawable/button_back</item>
+        <!-- The textColor property is backward compatible with the Support Library -->
+    </style>
+
+    <!-- ActionBar tabs text -->
+    <!-- <style name="MyActionBarTabText"
+           parent="@style/Widget.AppCompat.ActionBar.TabText">
+        <item name="android:textColor">@color/White</item>
+        The textColor property is backward compatible with the Support Library
+    </style> -->
+    
+    <!-- <style name="ActionBarWidgetCustom" parent="Theme.AppCompat.Light.DarkActionBar">
+        SearchView customization
+        <item name="searchViewSearchIcon">@drawable/ic_menu_search</item>
+        <item name="searchViewCloseIcon">@drawable/ic_action_remove</item>
+        <item name="searchViewTextField">@drawable/ab_textfield_searchview</item>
+        <item name="searchViewAutoCompleteTextView">@style/AutoCompleteTextViewCustom</item>
+    </style>
+ 
+    <style name="AutoCompleteTextViewCustom" parent="Widget.AppCompat.Light.AutoCompleteTextView">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textCursorDrawable">@null</item>
+        <item name="android:textColorHighlight">@color/search_view_selected_text</item>
+    </style> -->
+</resources>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/procuctWrapper"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent" >
+
+    <!-- android:background="@drawable/product_bg" -->
+
+    <ImageView
+        android:id="@+id/itemImage"
+        android:layout_width="250dp"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/image_9" />
+    
+    <ProgressBar
+	    android:id="@+id/imageLoading"
+	    style="?android:attr/progressBarStyleLarge"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:indeterminate="true"
+        android:layout_gravity="center"
+        android:visibility="invisible" />
+    
+    <TextView
+        android:id="@+id/tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#99000000"
+        android:padding="10dp"
+        android:text="TAG"
+        android:textColor="@color/White"
+        android:textSize="20sp" />
+
+    <!--
+         <com.dios.shopper.customcomponent.SquareImageView 
+        android:id="@+id/itemImage"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.9"
+        android:scaleType="center"
+        android:src="@drawable/gamis_kece1"/>
+    -->
+
+</FrameLayout>
